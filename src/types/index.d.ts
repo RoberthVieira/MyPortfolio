@@ -13,4 +13,5 @@ export interface Btn{
     icon?: ReactNode;
     onClick?: () => void;
     type?: 'button' | 'submit' | 'reset';
+    className?: string;
 }
