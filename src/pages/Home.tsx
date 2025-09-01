@@ -1,12 +1,13 @@
 import Button from "../components/Button";
+import Projects from "../components/Projects";
 
 export default function Home() {
     return (
-        <main className="min-h-screen flex items-center justify-center bg-stone-50">
-            <div className="max-w-7xl w-full mx-auto flex flex-col md:flex-row items-center justify-between px-6">
+        <main className="min-h-screen flex flex-col items-center justify-center bg-stone-50">
+            <div className="h-screen max-w-7xl w-full mx-auto flex flex-col md:flex-row items-center justify-between px-6 border-b border-gray-200">
                 <div className="flex-1 text-center md:text-left ">
-                    <h1 className="text-5xl font-bold leading-tight mb-6">
-                        Olá,<br />Eu sou <span className="text-gray-900">Roberth Vieira</span>!
+                    <h1 className="text-6xl font-bold leading-tight mb-6">
+                        Olá, eu sou <br/><span className="text-gray-900">Roberth Vieira</span>!
                     </h1>
                     <p className="mt-4 text-lg text-gray-600 max-w-2x1">
                         Desenvolvedor Frontend em constante evolução. Gosto de transformar ideias em código e interfaces bonitas.
@@ -20,6 +21,7 @@ export default function Home() {
                         {/*Div onde vai ficar a minha imagem*/}
                 </div>
             </div>
+            <Projects/>
         </main>
     )
 }

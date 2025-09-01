@@ -1,11 +1,12 @@
 import type { ReactNode } from "react";
 
-export interface Project{
+export interface ProjectPropType{
+    id: number;
     title: string;
     description: string;
-    link: string;
-    linkDemo: string;
-    tags: string; 
+    github: string;
+    demo: string;
+    img: string;
 }
 
 export interface Btn{
