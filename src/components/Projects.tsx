@@ -5,7 +5,7 @@ export default function Projects(){
 
     return(
         <section className="w-full py-16 bg-neutral-50">
-            <div className="max-w-7xl mx-auto px-6">
+            <div className="max-w-7xl mx-auto px-6 mb-22">
                 <div className="mb-12">
                     <h2 className="text-neutral-900 text-3xl font-bold">
                         Projetos em destaque
