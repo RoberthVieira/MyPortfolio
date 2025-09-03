@@ -7,10 +7,10 @@ export default function Projects(){
         <section className="w-full py-16 bg-neutral-50 border-b border-gray-200">
             <div className="max-w-7xl mx-auto px-6 mb-22">
                 <div className="mb-12">
-                    <h2 className="text-neutral-900 text-3xl font-bold">
-                        Alguns dos meus melhores projetos front end.
+                    <h2 className="text-neutral-900 text-4xl font-extrabold tracking-tight">
+                        Alguns dos meus melhores projetos front end
                     </h2>
-                    <p className="mt-2 text-ms text-gray-600">
+                    <p className="mt-2 text-ms text-gray-600 w-2/3">
                         Aqui você encontra alguns projetos que fiz colocando criatividade e código lado a lado. Cada um mostra minha evolução e paixão por criar interfaces que funcionam e encantam.
                     </p>
                 </div>

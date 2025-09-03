@@ -23,13 +23,13 @@ export default function ProjectCard({id, title, description, github, demo, img}:
                 <div className="flex border-t py-2 gap-4">
                     <a href={github}
                         target="_blank"
-                        className="flex bg-gray-800 rounded-full px-6 py-2 hover:bg-gray-700 items-center gap-3 text-white"
+                        className="flex bg-gray-800 rounded-full px-6 py-2 hover:bg-gray-700 items-center gap-3 text-white transition-colors duration-300 ease-in-out"
                     >
                         Ver Projeto <FaGithub/>
                     </a>
                     <a href={demo}
                         target="_blank"
-                        className="bg-gray-800 rounded-full px-6 py-2 hover:bg-gray-700 text-white"
+                        className="bg-gray-800 rounded-full px-6 py-2 hover:bg-gray-700 text-white transition-colors duration-300 ease-in-out"
                     >
                         Live Demo
                     </a>
