@@ -1,15 +1,27 @@
 import type { ProjectPropType } from "../types";
 import { FaGithub } from "react-icons/fa";
+import { useRef } from "react";
+import useScrollAnimation from "../hooks/useScrollAnimation";
 
-export default function ProjectCard({id, title, description, github, demo, img}: ProjectPropType){
-    return(
-        <div key={id} className="flex gap-6 items-center max-w-7xl mx-auto p-6 h-96">
+export default function ProjectCard({ id, title, description, github, demo, img }: ProjectPropType) {
+
+    const cardRef = useRef<HTMLDivElement | null>(null);
+    const cardVisivel = useScrollAnimation(cardRef);
+
+    return (
+        <div 
+            key={id}
+            ref={cardRef} 
+            className={`flex gap-6 items-center max-w-7xl mx-auto p-6 h-96
+                transition-all duration-700 ease-out
+                ${cardVisivel ? "opacity-100 scale-100" : "opacity-0 scale-75"}`}
+        >
             <div className="w-1/3 h-full flex justify-start items-center">
                 <figure className="flex justify-center items-center bg-stone-200 rounded-2xl shadow-lg p-6 w-full h-full">
-                    <img 
-                        src={img} 
-                        alt={title} 
-                        className="w-4/4 rounded-2xl object-contain"    
+                    <img
+                        src={img}
+                        alt={title}
+                        className="w-4/4 rounded-2xl object-contain"
                     />
                 </figure>
             </div>
@@ -25,7 +37,7 @@ export default function ProjectCard({id, title, description, github, demo, img}:
                         target="_blank"
                         className="flex bg-gray-800 rounded-full px-6 py-2 hover:bg-gray-700 items-center gap-3 text-white transition-colors duration-300 ease-in-out"
                     >
-                        Ver Projeto <FaGithub/>
+                        Ver Projeto <FaGithub />
                     </a>
                     <a href={demo}
                         target="_blank"
