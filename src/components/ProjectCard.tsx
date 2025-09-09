@@ -26,13 +26,13 @@ export default function ProjectCard({ id, title, description, github, demo, img 
                 </figure>
             </div>
             <div className="w-1/2 flex flex-col justify-start">
-                <h3 className="text-2xl font-bold text-gray-900 border-b border-gray-200">
+                <h3 className="text-2xl font-bold text-white border-b border-gray-600 py-4">
                     {title}
                 </h3>
-                <p className="text-gray-600 mt-4 mb-4 text-justify h-36 flex items-center">
+                <p className="text-gray-400 mt-4 mb-4 text-justify h-36 flex items-center">
                     {description}
                 </p>
-                <div className="flex border-t py-2 gap-4">
+                <div className="flex border-t border-gray-600 py-4 gap-4">
                     <a href={github}
                         target="_blank"
                         className="flex bg-gray-800 rounded-full px-6 py-2 hover:bg-gray-700 items-center gap-3 text-white transition-colors duration-300 ease-in-out"

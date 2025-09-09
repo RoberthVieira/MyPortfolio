@@ -10,18 +10,18 @@ export default function Projects() {
 
 
     return (
-        <section className="w-full py-16 bg-neutral-50 border-b border-gray-200">
-            <div className="max-w-7xl mx-auto px-6 mb-22">
+        <section className="w-full bg-transparent py-20">
+            <div className="max-w-7xl mx-auto px-6 mb-22 ">
                 <div className="mb-12">
                     <h2
                         ref={tituloRef}
-                        className={`text-neutral-900 text-4xl font-extrabold tracking-tight
+                        className={`text-white text-4xl font-extrabold tracking-tight
                             transition-all duration-700 ease-out
                             ${tituloVisivel ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}
                     >
                         Alguns dos meus melhores projetos front end
                     </h2>
-                    <p className={`mt-2 text-ms text-gray-600 w-2/3
+                    <p className={`mt-2 text-ms text-gray-400 w-2/3
                         transition-all duration-700 ease-out
                         ${tituloVisivel ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}
                     >
