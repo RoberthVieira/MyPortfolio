@@ -12,11 +12,11 @@ export default function ProjectCard({ id, title, description, github, demo, img 
         <div 
             key={id}
             ref={cardRef} 
-            className={`flex gap-6 items-center max-w-7xl mx-auto p-6 h-96
+            className={`flex flex-col md:flex-row gap-6 items-center max-w-7xl mx-auto p-6 md:h-96
                 transition-all duration-700 ease-out
                 ${cardVisivel ? "opacity-100 scale-100" : "opacity-0 scale-75"}`}
         >
-            <div className="w-1/3 h-full flex justify-start items-center">
+            <div className="w-full md:w-1/3 h-auto md:h-full flex justify-center items-center">
                 <figure className="flex justify-center items-center bg-stone-200 rounded-2xl shadow-lg p-6 w-full h-full">
                     <img
                         src={img}
@@ -25,23 +25,23 @@ export default function ProjectCard({ id, title, description, github, demo, img 
                     />
                 </figure>
             </div>
-            <div className="w-1/2 flex flex-col justify-start">
+            <div className="w-full md:w-1/2 flex flex-col justify-start text-center md:items-start md:text-left">
                 <h3 className="text-2xl font-bold text-white border-b border-gray-600 py-4">
                     {title}
                 </h3>
-                <p className="text-gray-400 mt-4 mb-4 text-justify h-36 flex items-center">
+                <p className="text-gray-400 mt-4 mb-4 text-justify md:text-justify h-auto md:h-36">
                     {description}
                 </p>
-                <div className="flex border-t border-gray-600 py-4 gap-4">
+                <div className="flex justify-center md:justify-start border-t border-gray-600 py-4 gap-4 w-full">
                     <a href={github}
                         target="_blank"
-                        className="flex bg-gray-800 rounded-full px-6 py-2 hover:bg-gray-700 items-center gap-3 text-white transition-colors duration-300 ease-in-out"
+                        className="flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold py-3 px-6 rounded-lg hover:scale-105 transition-transform duration-300"
                     >
                         Ver Projeto <FaGithub />
                     </a>
                     <a href={demo}
                         target="_blank"
-                        className="bg-gray-800 rounded-full px-6 py-2 hover:bg-gray-700 text-white transition-colors duration-300 ease-in-out"
+                        className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold py-3 px-6 rounded-lg hover:scale-105 transition-transform duration-300"
                     >
                         Live Demo
                     </a>

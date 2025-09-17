@@ -11,17 +11,17 @@ export default function Projects() {
 
     return (
         <section className="w-full bg-transparent py-20">
-            <div className="max-w-7xl mx-auto px-6 mb-22 ">
+            <div className="max-w-6xl mx-auto px-4 sm:px-6 mb-22">
                 <div className="mb-12">
                     <h2
                         ref={tituloRef}
-                        className={`text-white text-4xl font-extrabold tracking-tight
+                        className={`text-3xl sm:text-4xl md:text-5xl text-white font-extrabold tracking-tight
                             transition-all duration-700 ease-out
                             ${tituloVisivel ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}
                     >
                         Alguns dos meus melhores projetos front end
                     </h2>
-                    <p className={`mt-2 text-ms text-gray-400 w-2/3
+                    <p className={`mt-2 text-base sm:text-lg text-gray-300 w-full md:w-2/3
                         transition-all duration-700 ease-out
                         ${tituloVisivel ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}
                     >
@@ -29,7 +29,7 @@ export default function Projects() {
                     </p>
                 </div>
             </div>
-            <div className="flex flex-col gap-14 max-w-7xl mx-auto">
+            <div className="flex flex-col gap-14 max-w-6xl mx-auto">
                 {projectsData.map((projetos) => (
                     <ProjectCard
                         id={projetos.id}
