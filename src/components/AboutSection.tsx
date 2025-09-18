@@ -18,7 +18,7 @@ export default function AboutSection() {
                         className={`text-5xl text-white font-extrabold mb-4 tracking-tight
                         transition-all duration-700 ease-out
                         ${contentVisivel ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}>
-                        Um Pouco sobre mim
+                        Um pouco sobre mim
                     </h2>
                 </div>
                 <div

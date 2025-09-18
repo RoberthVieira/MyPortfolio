@@ -1,12 +1,35 @@
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import Button from "./Button";
-import { useRef } from "react";
+import React, { useRef } from "react";
 import useScrollAnimation from "../hooks/useScrollAnimation";
+import emailjs from 'emailjs-com';
 
 export default function Contact(){
 
     const contentRef = useRef<HTMLHeadingElement | null>(null);
     const contentVisivel = useScrollAnimation(contentRef);
+
+    const form = useRef<HTMLFormElement | null>(null);
+
+    const sendEmail = (e: React.FormEvent) => {
+        e.preventDefault();
+
+        if(form.current){
+            emailjs.sendForm(
+                "service_zt5f0w7",
+                "template_o1dqtkl",
+                form.current,
+                "W8PYOre7dfgG0C9gq"
+            ).then(
+                () => {
+                    alert("Mensagem enviada com sucesso!");
+                    form.current?.reset();
+                }, (error) => {
+                    alert("Erro ao enviar mensagem: " + error.text)
+                }
+            )
+        }
+    }
 
     return(
         <section id="contact" 
@@ -43,25 +66,32 @@ export default function Contact(){
                 </div>
                 <div className={`bg-gray-900 p-8 rounded-2xl space-y-4 transition-all duration-700 ease-out
                     ${contentVisivel ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"}`}>
-                    <form className="flex flex-col space-y-4">
+                    <form
+                        ref={form}
+                        onSubmit={sendEmail} 
+                        className="flex flex-col space-y-4">
                         <input 
                             type="text"
                             placeholder="Seu nome"
+                            name="name"
                             className="p-3 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-cyan-500"
                         />
                         <input 
                             type="text"
                             placeholder="Seu e-mail"
+                            name="email"
                             className="p-3 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-cyan-500"
                         />
                         <input 
                             type="text"
                             placeholder="Assunto"
+                            name="subject"
                             className="p-3 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-cyan-500"
                         />
                         <textarea 
                             placeholder="Sua mensagem"
                             rows={5}
+                            name="message"
                             className="p-3 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-cyan-500"
                         ></textarea>
                         <Button
