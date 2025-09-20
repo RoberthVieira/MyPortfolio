@@ -10,7 +10,7 @@ export default function AboutSection() {
 
     return (
         <section className="w-full bg-transparent">
-            <div className="max-w-6xl mx-auto px-6 py-24 mb-22 flex flex-col md:flex-row gap-12 border-b border-gray-600">
+            <div className="max-w-6xl mx-auto px-6 py-24 flex flex-col md:flex-row gap-12 border-b border-gray-600">
                 <div className="md:w-1/2 pr-0 md:pr-6 mb-8 md:mb-0"
                 >
                     <h2 

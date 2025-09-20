@@ -6,7 +6,7 @@ import Contact from "../components/Contact";
 
 export default function Home() {
     return (
-        <main className="min-h-screen flex flex-col items-center justify-center bg-transparent">
+        <main className="flex flex-col items-center justify-start bg-transparent">
             <div
                 className={`h-screen max-w-7xl w-full mx-auto flex flex-col md:flex-row items-center justify-between px-6 border-b border-gray-600`}>
                 <div className="flex-1 text-center md:text-left ">

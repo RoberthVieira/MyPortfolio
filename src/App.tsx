@@ -6,11 +6,12 @@ import Contact from './components/Contact';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Aurora from './assets/Aurora';
+import ScrollToTop from './utils/ScrollToTop';
 
 function App() {
 
   return (
-    <div className='relative min-h-screen w-full bg-[#0a0f1a] text-white'>
+    <div className='relative min-h-screen w-full bg-[#0a0f1a] text-white flex flex-col'>
 
       <div className='absolute inset-0 z-0'>
         <Aurora
@@ -23,6 +24,7 @@ function App() {
 
       <div className='relative z-10'>
         <Header/>
+        <ScrollToTop/>
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/about' element={<About/>}/>
