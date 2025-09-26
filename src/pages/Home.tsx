@@ -8,9 +8,10 @@ export default function Home() {
     return (
         <main className="flex flex-col items-center justify-start bg-transparent">
             <div
-                className={`h-screen max-w-7xl w-full mx-auto flex flex-col md:flex-row items-center justify-between px-6 border-b border-gray-600`}>
-                <div className="flex-1 text-center md:text-left ">
-                    <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-6 tracking-tight">
+                className="h-[calc(100vh+1rem)] max-w-6xl w-full mx-auto flex flex-col lg:flex-row items-center justify-center px-6 border-b border-gray-600 gap-10"
+            >
+                <div className="flex-1 text-center lg:text-left flex flex-col items-center lg:items-start">
+                    <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-6 tracking-tight">
                         <span className="block text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 animate-text">
                             Olá, eu sou
                         </span>
@@ -18,11 +19,11 @@ export default function Home() {
                             Roberth Vieira!
                         </span>
                     </h1>
-                    <p className="mt-4 text-lg md:text-xl text-gray-200 max-w-xl leading-relaxed">
+                    <p className="mt-4 text-base sm:text-lg md:text-xl text-gray-200 max-w-xl leading-relaxed">
                         🚀 Desenvolvedor <span className="font-semibold text-cyan-400">Frontend</span> em constante evolução. Transformo ideias em código e interfaces que encantam.
                     </p>
 
-                    <p className="mt-3 text-lg md:text-xl text-gray-300 max-w-xl leading-relaxed">
+                    <p className="mt-3 text-base sm:text-lg md:text-xl text-gray-300 max-w-xl leading-relaxed">
                         Descubra mais sobre meus trabalhos e
                         minha <span className="text-cyan-300">jornada</span> como dev.
                     </p>
@@ -34,11 +35,15 @@ export default function Home() {
                         />
                     </a>
                 </div>
-                <div className="flex-1 flex justify-center md:justify-end">
-                    <img src={MyPhoto} alt="Minha fotografia"
-                        className="w-72 h-72 md:w-96 md:h-96 object-cover rounded-full border-4 border-cyan-400 shadow-[0_0_25px_8px_rgba(34,211,238,0.6)]" />
+                <div className="flex-1 flex justify-center lg:justify-end">
+                    <img
+                        src={MyPhoto}
+                        alt="Minha fotografia"
+                        className="w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 object-cover rounded-full border-4 border-cyan-400 shadow-[0_0_25px_8px_rgba(34,211,238,0.6)]"
+                    />
                 </div>
             </div>
+
             <Projects />
             <AboutSection />
             <Contact />
