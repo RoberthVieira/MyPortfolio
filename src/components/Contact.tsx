@@ -33,21 +33,21 @@ export default function Contact(){
 
     return(
         <section id="contact" 
-            className="w-full bg-transparent text-white py-16 px-6"
+            className="w-full bg-transparent text-white py-12 px-4 sm:px-6 md:px-8"
         >
             <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
                 <div 
                     ref={contentRef}
-                    className={`flex flex-col justify-start transition-all duration-700 ease-out
+                    className={`flex flex-col justify-start transition-all duration-700 ease-out text-center md:text-left
                     ${contentVisivel ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}
                 >
-                    <h2 className="text-4xl md:text-5xl font-extrabold mb-4">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4">
                         Entre em contato
                     </h2>
-                    <p className="text-lg text-gray-300 mb-6">
+                    <p className="text-base sm:text-lg text-gray-300 mb-6">
                         Entre em contato em <span>roberthvieiracv@gmail.com</span><br /> ou mande uma mensagem por aqui mesmo!
                     </p>
-                    <div className="flex space-x-4">
+                    <div className="flex justify-center md:justify-start space-x-4">
                         <a 
                             href="https://www.linkedin.com/in/roberth-vieira-501490211/" 
                             target="_blank"
@@ -64,7 +64,7 @@ export default function Contact(){
                         </a>
                     </div>
                 </div>
-                <div className={`bg-gray-900 p-8 rounded-2xl space-y-4 transition-all duration-700 ease-out
+                <div className={`bg-gray-900 p-6 sm:p-8 rounded-2xl space-y-4 transition-all duration-700 ease-out
                     ${contentVisivel ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"}`}>
                     <form
                         ref={form}
@@ -74,30 +74,30 @@ export default function Contact(){
                             type="text"
                             placeholder="Seu nome"
                             name="name"
-                            className="p-3 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-cyan-500"
+                            className="p-3 rounded-lg bg-gray-800 text-white text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-cyan-500"
                         />
                         <input 
                             type="text"
                             placeholder="Seu e-mail"
                             name="email"
-                            className="p-3 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-cyan-500"
+                            className="p-3 rounded-lg bg-gray-800 text-white text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-cyan-500"
                         />
                         <input 
                             type="text"
                             placeholder="Assunto"
                             name="subject"
-                            className="p-3 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-cyan-500"
+                            className="p-3 rounded-lg bg-gray-800 text-white text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-cyan-500"
                         />
                         <textarea 
                             placeholder="Sua mensagem"
                             rows={5}
                             name="message"
-                            className="p-3 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-cyan-500"
+                            className="p-3 rounded-lg bg-gray-800 text-white text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-cyan-500"
                         ></textarea>
                         <Button
                             type='submit'
                             text="Enviar mensagem"
-                            className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold py-3 px-6 rounded-lg hover:scale-105 transition-transform duration-300"
+                            className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold py-3 px-6 rounded-lg hover:scale-105 transition-transform duration-300 text-sm sm:text-base"
                         />
                     </form>
                 </div>

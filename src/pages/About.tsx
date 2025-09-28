@@ -1,7 +1,7 @@
 import Contact from "../components/Contact"
 export default function About() {
     return (
-        <section className="w-full bg-transparent pt-24 md:pt-28 lg:pt-32 pb-16 md:pb-24">
+        <section className="w-full bg-transparent pt-32 md:pt-28 lg:pt-32 pb-4 md:pb-8">
             <div className="max-w-6xl mx-auto px-6">
                 <div className="mb-12 text-center">
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight mb-4">
@@ -50,7 +50,7 @@ export default function About() {
                         </li>
                     </ul>
                 </div>
-                <div className="mb-12 md:mb-16 border-b border-gray-600 pb-8 md:pb-12 grid md:grid-cols-2 gap-8 md:gap-10">
+                <div className="mb-1 border-b border-gray-600 pb-8 md:pb-12 grid md:grid-cols-2 gap-8 md:gap-10">
                     <div>
                         <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">Hard Skills</h3>
                         <ul className="list-disc list-inside text-sm md:text-base lg:text-lg text-gray-300 space-y-2">
