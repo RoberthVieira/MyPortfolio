@@ -18,21 +18,16 @@ export default function About() {
                         Minha Jornada
                     </h3>
                     <p className="text-sm md:text-base lg:text-lg text-gray-300 leading-relaxed text-justify">
-                        Venho de uma origem simples, onde poucos na minha família tiveram a oportunidade
-                        de estudar e explorar áreas como a programação. Desde a infância, sempre tive
-                        uma curiosidade intensa em entender como tudo funcionava — desmontava brinquedos,
-                        eletrônicos e sempre queria descobrir o que havia por trás de cada mecanismo.
-                        Isso moldou meu jeito de aprender e de encarar desafios.
-                        Comecei a trabalhar cedo, aos 14 anos, e desde então nunca parei de correr atrás
-                        dos meus sonhos. Durante muito tempo não me permiti sonhar grande, pois estava
-                        acostumado a ver pessoas próximas se contentarem com pouco. Foi na pandemia que
-                        percebi que eu também poderia ser grande e conquistar o que desejasse, desde que
-                        estivesse disposto a aprender e me dedicar. Essa virada marcou minha trajetória
-                        pessoal e profissional.
-                        Hoje, trago comigo traços de personalidade que se tornaram diferenciais:
-                        resiliência, disciplina e empatia. São essas características, junto com minhas
-                        soft skills como comunicação clara, facilidade em aprender e espírito de colaboração,
-                        que moldam minha forma de trabalhar e de me relacionar com as pessoas.
+                        Desde cedo sempre fui movido pela curiosidade e pelo desejo de entender como as coisas funcionam. Isso acabou me levando naturalmente para a tecnologia. Comecei a trabalhar jovem e, ao longo da minha trajetória, aprendi a valorizar dedicação, disciplina e evolução constante.
+                    </p>
+                    <p className="text-sm md:text-base lg:text-lg text-gray-300 leading-relaxed text-justify">
+                        Quando descobri a programação, finalmente encontrei um caminho que unia lógica, criatividade e a oportunidade de construir algo do zero. Desde então, venho me aprofundando no desenvolvimento web, iniciando pelo front-end e agora expandindo meus conhecimentos rumo ao fullstack.
+                    </p>
+                    <p className="text-sm md:text-base lg:text-lg text-gray-300 leading-relaxed text-justify">
+                        Hoje, meu foco é me tornar um desenvolvedor fullstack completo, dominando não só o React e TypeScript no front, mas também Node.js e todo o ecossistema backend. Busco sempre aprender um pouco mais a cada dia, melhorar meu código e criar soluções que realmente façam a diferença.
+                    </p>
+                    <p className="text-sm md:text-base lg:text-lg text-gray-300 leading-relaxed text-justify">
+                        Trago comigo paixão pelo que faço, vontade de crescer na área e a mentalidade de estar sempre evoluindo — um passo de cada vez, mas sempre adiante.
                     </p>
                 </div>
 

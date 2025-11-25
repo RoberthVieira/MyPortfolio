@@ -25,7 +25,7 @@ export default function Projects() {
                             transition-all duration-700 ease-out
                             ${tituloVisivel ? "opacity-100 scale-100" : "opacity-0 scale-75"}`}
                     >
-                        Aqui você encontra alguns projetos que fiz colocando criatividade e código lado a lado. Cada um mostra minha evolução e paixão por criar interfaces que funcionam e encantam.
+                        Aqui você encontra alguns projetos que fiz colocando criatividade e código lado a lado. Cada um mostra minha evolução e paixão por criar interfaces que funcionam.
                     </p>
                 </div>
             </div>

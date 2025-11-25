@@ -2,7 +2,7 @@ export const projectsData = [
     {
         id: 1,
         title: "CheckList de Viagem Inteligente",
-        description: "Um aplicativo web desenvolvido para ajudar viajantes a se organizarem de forma prática e personalizada. O usuário pode criar diferentes checklists de viagem, adicionar itens manualmente ou escolher a partir de sugestões inteligentes baseadas no clima e no destino pesquisado. Além disso, cada checklist permite anotações e observações, garantindo que nenhum detalhe seja esquecido.",
+        description: "Um aplicativo web criado para facilitar a organização de viagens de forma prática e personalizada. O usuário pode gerar múltiplos checklists, adicionar itens manualmente ou selecionar sugestões automáticas baseadas no clima e no destino pesquisado. Cada checklist também permite anotações personalizadas, garantindo que nenhum detalhe seja esquecido. O projeto reforça meus conhecimentos em lógica, estados globais, componentização e interação dinâmica com APIs.",
         github: 'https://github.com/RoberthVieira/Checklist-Viagem-Inteligente',
         demo: 'https://checklist-viagem-inteligente-tc94.vercel.app/',
         img: '../public/IMG/checklist.png'
@@ -10,7 +10,7 @@ export const projectsData = [
     {
         id: 2,
         title: 'Costs',
-        description: 'Uma aplicação voltada para o gerenciamento de projetos e controle financeiro. O usuário pode cadastrar projetos, definir orçamentos, adicionar serviços e acompanhar os custos em tempo real, garantindo maior organização e clareza no planejamento financeiro.',
+        description: 'Uma aplicação focada no gerenciamento de projetos e controle financeiro. Permite cadastrar projetos, definir orçamentos, adicionar serviços e acompanhar gastos em tempo real. Durante o desenvolvimento, aprofundei conceitos de formulários, navegação entre rotas, gerenciamento de estado e estruturação de aplicações front-end com foco em usabilidade e clareza.',
         github: 'https://github.com/RoberthVieira/Costs',
         demo: 'https://costs-ivory.vercel.app/',
         img: '../public/IMG/costs.png'
@@ -18,7 +18,7 @@ export const projectsData = [
     {
         id: 3,
         title: 'CondoShop',
-        description: 'CondoShop é uma aplicação web fictícia de e-commerce desenvolvida com React + TypeScript. O projeto foi criado com o objetivo de treinar conceitos fundamentais de componentização, navegação entre rotas, hooks personalizados, validação de formulários com Zod, React Hook Form e estilização responsiva com TailwindCSS.',
+        description: 'CondoShop é um e-commerce fictício desenvolvido com React + TypeScript, criado para treinar boas práticas de componentização e arquitetura front-end. O projeto utiliza React Router para navegação, formulários validados com Zod e React Hook Form, além de estilização totalmente responsiva com TailwindCSS. Foi um dos meus projetos mais completos para consolidar rotas, validação e construção de interfaces modernas e escaláveis.',
         github: 'https://github.com/RoberthVieira/condoshop',
         demo: 'https://condoshop.vercel.app/',
         img: '../public/IMG/condoshop.png'

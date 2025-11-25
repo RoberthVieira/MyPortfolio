@@ -29,7 +29,7 @@ export default function ProjectCard({ id, title, description, github, demo, img 
                 <h3 className="text-2xl font-bold text-white border-b border-gray-600 py-4">
                     {title}
                 </h3>
-                <p className="text-gray-400 mt-4 mb-4 text-justify md:text-justify h-auto md:h-36">
+                <p className="text-gray-400 mt-4 mb-4 text-justify md:text-justify h-auto md:auto">
                     {description}
                 </p>
                 <div className="flex justify-center md:justify-start border-t border-gray-600 py-4 gap-4 w-full">
