@@ -39,7 +39,7 @@ export default function Contact(){
                 <div 
                     ref={contentRef}
                     className={`flex flex-col justify-start transition-all duration-700 ease-out text-center md:text-left
-                    ${contentVisivel ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}
+                    ${contentVisivel ? "opacity-100 scale-100" : "opacity-0 scale-75"}`}
                 >
                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4">
                         Entre em contato
@@ -65,7 +65,7 @@ export default function Contact(){
                     </div>
                 </div>
                 <div className={`bg-gray-900 p-6 sm:p-8 rounded-2xl space-y-4 transition-all duration-700 ease-out
-                    ${contentVisivel ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"}`}>
+                    ${contentVisivel ? "opacity-100 scale-100" : "opacity-0 scale-75"}`}>
                     <form
                         ref={form}
                         onSubmit={sendEmail} 

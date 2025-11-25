@@ -58,6 +58,8 @@ export default function About() {
                             <li>Next.js · TailwindCSS</li>
                             <li>Git/GitHub · APIs REST</li>
                             <li>HTML5 · CSS3</li>
+                            <li>Node/Express (introdutório)</li>
+                            <li>Python (introdutório)</li>
                         </ul>
                     </div>
                     <div>

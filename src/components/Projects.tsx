@@ -17,13 +17,13 @@ export default function Projects() {
                         ref={tituloRef}
                         className={`text-3xl sm:text-4xl md:text-5xl text-white font-extrabold tracking-tight
                             transition-all duration-700 ease-out
-                            ${tituloVisivel ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}
+                            ${tituloVisivel ? "opacity-100 scale-100" : "opacity-0 scale-75"}`}
                     >
                         Alguns dos meus melhores projetos front end
                     </h2>
                     <p className={`mt-2 text-sm sm:text-base md:text-lg text-gray-300 w-full md:w-2/3
                             transition-all duration-700 ease-out
-                            ${tituloVisivel ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}
+                            ${tituloVisivel ? "opacity-100 scale-100" : "opacity-0 scale-75"}`}
                     >
                         Aqui você encontra alguns projetos que fiz colocando criatividade e código lado a lado. Cada um mostra minha evolução e paixão por criar interfaces que funcionam e encantam.
                     </p>
