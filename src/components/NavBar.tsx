@@ -1,26 +1,29 @@
 import { Link } from "react-router-dom";
 
-export default function NavBar(){
-    return(
-        <nav className="flex gap-6 text-gray-600">
-            <Link to='/' className="relative group">
-                <span className="absolute left-0 bottom-1 h-[2px] w-0 bg-gray-200 transition-all duration-300 group-hover:w-full"></span>
-                <span className="relative z-10 text-gray-200 hover:text-white transition duration-300">
-                    Home
-                </span>
+interface NavBarProps {
+    mobile?: boolean;
+    onLinkClick?: () => void;
+}
+
+export default function NavBar({ mobile = false, onLinkClick }: NavBarProps) {
+    const baseClasses =
+        "text-gray-200 hover:text-white transition duration-300 relative group";
+
+    const handleClick = () => {
+        if (onLinkClick) onLinkClick();
+    };
+
+    return (
+        <nav className={`${mobile ? "flex flex-col gap-4" : "flex gap-6"}`}>
+            <Link to="/" onClick={handleClick} className={baseClasses}>
+                Home
             </Link>
-            <Link to='/about' className="relative group">
-                <span className="relative z-10 text-gray-200 hover:text-white transition duration-300">
-                    About
-                </span>
-                <span className="absolute left-0 bottom-1 h-[2px] w-0 bg-gray-200 transition-all duration-300 group-hover:w-full"></span>
+            <Link to="/about" onClick={handleClick} className={baseClasses}>
+                About
             </Link>
-            <a
-                href="#contact"
-                className="relative group text-gray-200 hover:text-white transition duration-300">
-                <span className="absolute left-0 bottom-1 h-[2px] w-0 bg-gray-200 transition-all duration-300 group-hover:w-full"></span>
-                <span className="relative z-10">Contact</span>
+            <a href="#contact" onClick={handleClick} className={baseClasses}>
+                Contact
             </a>
         </nav>
-    )
+    );
 }
