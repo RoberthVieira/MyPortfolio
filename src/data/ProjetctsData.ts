@@ -14,5 +14,13 @@ export const projectsData = [
         github: 'https://github.com/RoberthVieira/Costs',
         demo: 'https://costs-ivory.vercel.app/',
         img: '../public/IMG/costs.png'
+    },
+    {
+        id: 3,
+        title: 'CondoShop',
+        description: 'CondoShop é uma aplicação web fictícia de e-commerce desenvolvida com React + TypeScript. O projeto foi criado com o objetivo de treinar conceitos fundamentais de componentização, navegação entre rotas, hooks personalizados, validação de formulários com Zod, React Hook Form e estilização responsiva com TailwindCSS.',
+        github: 'https://github.com/RoberthVieira/condoshop',
+        demo: 'https://condoshop.vercel.app/',
+        img: '../public/IMG/condoshop.png'
     }
 ]
