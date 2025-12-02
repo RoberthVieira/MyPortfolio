@@ -76,7 +76,7 @@ O servidor iniciará em: http://localhost:5173/
 
 
 ## **🗂️ Estrutura do projeto**
-
+```
 src/
 ├── assets/
 │   └── ... (imagens e arquivos estáticos)
@@ -113,7 +113,7 @@ src/
 │
 ├── App.tsx
 └── main.tsx
-
+```
 ---
 
 
