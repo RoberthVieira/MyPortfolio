@@ -108,11 +108,11 @@ src/
 ├── types/
 │   └── index.ts
 │
-└── utils/
-    └── ScrollToTop.tsx
-
-App.tsx  
-main.tsx
+├── utils/
+│   └── ScrollToTop.tsx
+│
+├── App.tsx
+└── main.tsx
 
 ---
 
