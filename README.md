@@ -1,69 +1,153 @@
-# React + TypeScript + Vite
+# 🌐 Meu Portfólio — Roberth Vieira
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bem-vindo ao meu portfólio pessoal!
+Aqui você encontra meus principais projetos, minha trajetória como desenvolvedor, minhas habilidades e canais de contato.
 
-Currently, two official plugins are available:
+Este projeto foi desenvolvido com foco em **performance, design responsivo, navegação suave e componentização moderna**, utilizando React, TypeScript e TailwindCSS.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🔗 **Deploy**
+Acesse o site completo aqui: 
+👉 **https://SEU-LINK-DO-DEPLOY.com**
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 🖼️ **Preview**
+![Preview do Portfólio](./public/IMG/preview.png)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+
+## ✨ **Funcionalidades**
+
+- **Página Home** — Apresentação, chamada para contato e destaque do desenvolvedor.
+- **Seção de Projetos** — Lista de projetos com imagem, descrição, deploy e GitHub.  
+- **Sobre Mim** — Minha jornada, formação, hard skills e soft skills.
+- **Contato** — Seção com formulário e informações sociais.
+- **Design totalmente responsivo** — Desktop, tablet e mobile.
+- **UI moderna** com animações suaves.
+- **Tema escuro** com visual minimalista.
+
+---
+
+
+## 🚀 **Tecnologias Utilizadas**
+
+### **Frontend**
+- React.js
+- TypeScript 
+- React Router DOM
+- TailwindCSS
+- Vite
+
+### **Outras técnicas**
+- Hooks personalizados (ex: `useScrollAnimation`)  
+- Componentização avançada  
+- Navegação com ScrollToTop  
+- Importação otimizada de imagens  
+- UX/UI aprimorada
+
+---
+
+
+## 📦 **Como executar o projeto**
+
+### **1. Clone o repositório**
+```bash
+git clone https://github.com/RoberthVieira/MyPortfolio
+
+2 - Acesse o diretório
+cd MyPortfolio
+
+3 - Instale as dependências
+npm install
+
+4 - Rode o projeto
+npm run dev
+
+O servidor iniciará em: http://localhost:5173/
+
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+
+## **🗂️ Estrutura do projeto**
+
+src/
+├── assets/
+│   └── ... (imagens e arquivos estáticos)
+│
+├── components/
+│   ├── Header.tsx
+│   ├── NavBar.tsx
+│   ├── Footer.tsx
+│   ├── Projects.tsx
+│   ├── ProjectCard.tsx
+│   ├── Contact.tsx
+│   ├── Button.tsx
+│   └── AboutSection.tsx
+│
+├── data/
+│   └── ProjectData.ts
+│
+├── hooks/
+│   └── useScrollAnimation.ts
+│
+├── pages/
+│   ├── Home.tsx
+│   └── About.tsx
+│
+├── styles/
+│   ├── index.css
+│   └── App.css
+│
+├── types/
+│   └── index.ts
+│
+└── utils/
+    └── ScrollToTop.tsx
+
+App.tsx  
+main.tsx
+
+---
+
+
+## **🧑‍💻 Sobre o Desenvolvedor**
+
+Sou Roberth Vieira, desenvolvedor Frontend em constante evolução e estudando para me tornar Fullstack.
+Atualmente desenvolvo com:
+- React
+- TypeScript
+- Tailwind
+- Node.js
+- JavaScript ES6+
+
+E busco sempre criar interfaces modernas, intuitivas e bem estruturadas.
+
+---
+
+
+## **📬 Contato**
+
+Se quiser conversar, colaborar ou conhecer mais do meu trabalho:
+- LinkedIn: https://www.linkedin.com/in/roberth-vieira-501490211/
+- GitHub: https://github.com/RoberthVieira
+- Email: roberthvieiracv@gmail.com
+
+---
+
+
+## **📄 Licença**
+
+Este projeto é livre para estudo.
+Não é permitido replicar como portfólio próprio.
+
+---
+
+
+⭐ Se este repositório te ajudou, considere deixar uma estrela!
