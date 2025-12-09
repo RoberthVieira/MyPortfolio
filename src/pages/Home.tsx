@@ -1,6 +1,6 @@
 import Button from "../components/Button";
 import Projects from "../components/Projects";
-import MyPhoto from '../../public/IMG/myPhoto.png';
+import MyPhoto from '../assets/IMG/myPhoto.png';
 import AboutSection from "../components/AboutSection";
 import Contact from "../components/Contact";
 
